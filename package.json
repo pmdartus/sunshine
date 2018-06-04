@@ -1,0 +1,46 @@
+{
+  "name": "aura-automation",
+  "version": "1.0.0",
+  "description": "Aura performance automation tool",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "format": "prettier src/* --write",
+    "lint": "eslint src/*"
+  },
+  "author": "Pierre-Marie Dartus <p.dartus@salesforce.com>",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^1.4.0",
+    "signale": "^1.1.0",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.13.4"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+        "ecmaVersion": 9,
+        "sourceType": "module"
+    },
+    
+    "env": {
+        "es6": true,
+        "node": true
+    },
+
+    "extends": "eslint:recommended",
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": "error"
+    }
+  }
+}
