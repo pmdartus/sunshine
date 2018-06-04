@@ -1,7 +1,7 @@
 {
   "name": "aura-automation",
   "version": "1.0.0",
-  "description": "Aura performance automation tool",
+  "description": "Performance automation tool to measure Lightning page performance",
   "main": "src/index.js",
   "scripts": {
     "start": "node ./src/index.js",
@@ -11,8 +11,10 @@
   "author": "Pierre-Marie Dartus <p.dartus@salesforce.com>",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^2.4.1",
     "puppeteer": "^1.4.0",
     "signale": "^1.1.0",
+    "simple-statistics": "^6.0.1",
     "yargs": "^11.0.0"
   },
   "devDependencies": {

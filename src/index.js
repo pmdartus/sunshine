@@ -2,7 +2,7 @@ const yargs = require('yargs');
 const signale = require('signale');
 
 const { run } = require('./runner');
-const { publish } = require('./publisher');
+const { report } = require('./reporter');
 
 const { argv } = yargs
     .config()
@@ -50,7 +50,7 @@ const config = {
 (async () => {
     try {
         const results = await run(config);
-        publish(results, config);
+        report(results, config);
     } catch (error) {
         // Handle uncaught error
         signale.error(error);

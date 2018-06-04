@@ -28,7 +28,7 @@ async function run(config) {
         let iterationResult = undefined;
         try {
             const data = await measurePageEPT(iterationConfig);
-            sessionLogger.success('Iteration results\n', JSON.stringify(data, null, 4));
+            sessionLogger.success('Iteration results', JSON.stringify(data));
 
             iterationResult = {
                 data,
