@@ -2,9 +2,9 @@
 
 Performance automation tool to measure Lightning page performance.
 
-<p align="center">
-![Example Image](/assets/example.png?raw=true)
-</p>
+
+![Example Image](assets/example.png?raw=true)
+
 
 ## Setup
 
@@ -28,12 +28,12 @@ npm start -- \
 
 ## Missing features
 
-- Packaging
-    - [ ]: Provide proper CLI
-- Measure
-    - [X]: Add support EPT
-    - [ ]: Add support BPT
-    - [ ]: Add support SPT
-- Output
-    - [ ]: Add exported to CSV
-    - [ ]: Add exported for Google Spreadsheet
+* Packaging
+    * [ ] Provide proper CLI
+* Measure
+    * [X] Add support EPT
+    * [ ] Add support BPT
+    * [ ] Add support SPT
+* Output
+    * [ ] Add exported to CSV
+    * [ ] Add exported for Google Spreadsheet
